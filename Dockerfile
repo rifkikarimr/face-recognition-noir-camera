@@ -1,8 +1,10 @@
-This is a sample Dockerfile you can modify to deploy your own app based on face_recognition
-Modificated by Matteo Bianchi to run his project server
+# This is a sample Dockerfile you can modify to deploy your own app based on face_recognition
+# Modificated by Matteo Bianchi to run his project server
 
 FROM python:3.6-slim-stretch
 #install necesary package
+
+
 RUN apt-get -y update
 RUN apt-get install -y --fix-missing \
     build-essential \
