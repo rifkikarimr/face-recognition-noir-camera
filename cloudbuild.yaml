@@ -5,20 +5,5 @@ steps:
   # Push the container image to Container Registry
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "gcr.io/arched-hybrid-368713/face-recog-gcr"]
-  # Deploy container image to Cloud Run
-  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
-    entrypoint: gcloud
-    args:
-      [
-        "run",
-        "deploy",
-        "face-recog-gcr",
-        "--image",
-        "gcr.io/arched-hybrid-368713/face-recog-gcr",
-        "--region",
-        "us-central1",
-        "--port",
-        "80",
-      ]
 images:
   - gcr.io/arched-hybrid-368713/face-recog-gcr
