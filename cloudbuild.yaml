@@ -12,7 +12,7 @@ steps:
       [
         "run",
         "deploy",
-        "iotcicd-skripsi",
+        "face-recog-gcr",
         "--image",
         "gcr.io/arched-hybrid-368713/face-recog-gcr",
         "--region",
