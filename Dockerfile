@@ -4,7 +4,6 @@
 FROM python:3.6-slim-stretch
 #install necesary package
 
-
 RUN apt-get -y update
 RUN apt-get install -y --fix-missing \
     build-essential \

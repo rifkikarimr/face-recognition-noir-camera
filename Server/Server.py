@@ -6,11 +6,11 @@ from shutil import copyfile
 #run indicate the actual state of the server
 run=True
 #the hostname or address of the raspberry pi
-myHostname = "192.168.1.6"
+myHostname = "172.20.10.2"
 #the username of the pi
 myUsername = "pi"
 #the pass of the pi 
-myPassword = "facerec1"
+myPassword = "raspberrypi"
 #directory of know faces 
 knowdirectory = r'known_faces'
 known_faces=[]
